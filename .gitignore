@@ -1,0 +1,6 @@
+.idea/*
+node_modules/*
+.rpt2_cache/*
+lib/*
+.yalc/*
+yalc.lock
