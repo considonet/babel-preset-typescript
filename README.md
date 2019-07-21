@@ -47,5 +47,5 @@ npm install --save-dev @considonet/babel-preset-typescript
 or using yarn:
 
 ```sh
-yarn add @babel/babel-preset-typescript --dev
+yarn add @considonet/babel-preset-typescript --dev
 ```
