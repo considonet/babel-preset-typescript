@@ -890,10 +890,10 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-preset-typescript-vue@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/babel-preset-typescript-vue/-/babel-preset-typescript-vue-1.0.1.tgz#85745d75aa1caef7ab9f00be248fb87522882294"
-  integrity sha512-3jvWPYrZLWLqG0tmre2/YkcTCccCYJLbO8CnS0rms9WrXFrFHfz1I0kvBZoedE3V2iBlxktMocpeJlbg59WrFA==
+babel-preset-typescript-vue@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/babel-preset-typescript-vue/-/babel-preset-typescript-vue-1.0.2.tgz#754f27867335c51c5ac0f633d3d85237bbd6d59f"
+  integrity sha512-E33V9hWzZ94Uq9hGTaNRaqcJTLiiUKBQGjq9WLJgOiOAqihhf8C1ZmSi/qX9ptEopvj49d+I2QVBVv6cXef4Ww==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-transform-typescript" "^7.3.2"
