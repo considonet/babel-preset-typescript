@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This preset was created as a part of [G-Build](https://www.npmjs.com/package/@considonet/g-build) evolution. Starting from version 4.0, there are no longer configuration files for Babel and these have to be provided manually (as they are project-specific). Because all our existing legacy projects have exactly the same config, this package makes the transition to G-Build 4 and Babel TypeScript transpilation easy. Also it provides a setup which was proved to work for us.
+This preset was created as a part of [G-Build](https://www.npmjs.com/package/@considonet/g-build) evolution. Starting from version 4.0, there are no longer configuration files for Babel and these have to be provided manually (as they are project-specific). Because all our existing legacy projects have exactly the same config, this package makes the transition to G-Build 4 and Babel TypeScript transpilation easy. Also it provides a setup which was proven to work for us.
 
 This preset loads the following presets and plugins:
 
@@ -23,8 +23,8 @@ This preset loads the following presets and plugins:
 - `react` (boolean, default: true) - enables `@babel/preset-react`
 
 - `presetEnvSettings` (object, default: see below) - configures `@babel/preset-env`.
-
-The default setup is as follows:
+  
+Parameter is optional. The default setup is as follows:
 
 ```json
 {
@@ -35,6 +35,12 @@ The default setup is as follows:
 ```
 
 Please refer to [@babel/preset-env docs](https://babeljs.io/docs/en/babel-preset-env) for more details.
+
+- `presetReactSettings` (object, default: see below) - configures `@babel/preset-react` if `react` set to true.
+
+Parameter is optional. The default setup is the preset's default setup.
+
+Please refer to [@babel/preset-react docs](https://babeljs.io/docs/en/babel-preset-react) for more details. It's a good place to set `runtime` to `automatic` if you're already using React 17.
 
 ## Install
 

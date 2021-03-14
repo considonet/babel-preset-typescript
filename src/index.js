@@ -17,7 +17,8 @@ export default declare(
       "modules": "auto",
       "useBuiltIns": "usage",
       "corejs": 3
-    }
+    },
+    presetReactSettings = {}
   }) => {
   api.assertVersion(7);
 
@@ -26,6 +27,10 @@ export default declare(
   }
 
   if (typeof presetEnvSettings !== "object") {
+    throw new Error("presetEnvSettings must be an object, or undefined");
+  }
+
+  if (typeof presetReactSettings !== "object") {
     throw new Error("presetEnvSettings must be an object, or undefined");
   }
 
@@ -39,10 +44,13 @@ export default declare(
   ]);
 
   if(react) {
-    presets.push(presetReact);
+    presets.push([
+      presetReact,
+      presetReactSettings
+    ]);
   }
 
-  const cfg = {
+  return {
     "plugins": [
       pluginProposalObjectRestSpread,
       pluginSyntaxDynamicImport,
@@ -51,7 +59,5 @@ export default declare(
     ],
     presets
   };
-
-  return cfg;
 
 });
